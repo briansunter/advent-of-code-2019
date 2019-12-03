@@ -1,25 +1,8 @@
-# Node Jest TDD Starter
+# Advent of Code 2019
 
-A simple node Jest Javascript TDD boilerplate project
+Solutions to [Advent of Code 2019](https://adventofcode.com/2019 "Advent of Code 2019") in Javascript.
 
 ## Usage
 `npm test`
 
 `npm run test:watch`
-
-```
- PASS  src/sum.test.js
-  ✓ adds 1 + 2 to equal 3 (2ms)
-
-----------|----------|----------|----------|----------|-------------------|
-File      |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
-----------|----------|----------|----------|----------|-------------------|
-All files |      100 |      100 |      100 |      100 |                   |
- sum.js   |      100 |      100 |      100 |      100 |                   |
-----------|----------|----------|----------|----------|-------------------|
-Test Suites: 1 passed, 1 total
-Tests:       1 passed, 1 total
-Snapshots:   0 total
-Time:        0.433s, estimated 1s
-Ran all test suites.
-```

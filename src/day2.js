@@ -32,7 +32,7 @@ function findNounVerb(program) {
   for (let i = 0; i< 99; i++){
     for (let j = 0; j< 99; j++){
       const newProgram = [...program];
-      setNounVerb(program, i, j);
+      setNounVerb(newProgram, i, j);
 
       runProgram(newProgram);
       const result = newProgram[0];
