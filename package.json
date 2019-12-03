@@ -4,13 +4,20 @@
   "description": "Simple TDD boilerplate for node.js and jest",
   "main": "index.js",
   "scripts": {
+    "lint:fix": "eslint src/**/*.js --fix",
+    "format:fix": "prettier src/**/*.js --write",
     "test": "jest --coverage",
     "test:watch": "jest --watchAll --coverage"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "jest": "^24.9.0"
+    "eslint": "^6.7.2",
+    "eslint-config-prettier": "6.7.0",
+    "eslint-plugin-jest": "^23.1.1",
+    "eslint-plugin-prettier": "3.1.1",
+    "jest": "^24.9.0",
+    "prettier": "1.19.1"
   },
   "dependencies": {
     "lodash": "^4.17.15"

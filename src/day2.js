@@ -6,16 +6,16 @@ function runOpCode(chunk, program) {
   const num2 = program[num2Pos];
 
   if (opCode === 1) {
-    program[resultPos] = (num1 + num2);
+    program[resultPos] = num1 + num2;
   } else if (opCode === 2) {
-    program[resultPos] = (num1 * num2);
+    program[resultPos] = num1 * num2;
   }
 }
 
 function runProgram(program) {
   const myProgram = program;
   for (let i = 0; i < myProgram.length && myProgram[i] !== 99; i = i + 4) {
-    runOpCode(myProgram.slice(i, i+4), myProgram);
+    runOpCode(myProgram.slice(i, i + 4), myProgram);
   }
 }
 
@@ -29,8 +29,8 @@ function setNounVerb(program, noun, verb) {
 }
 
 function findNounVerb(program) {
-  for (let i = 0; i< 99; i++){
-    for (let j = 0; j< 99; j++){
+  for (let i = 0; i < 99; i++) {
+    for (let j = 0; j < 99; j++) {
       const newProgram = [...program];
       setNounVerb(newProgram, i, j);
 
@@ -44,6 +44,8 @@ function findNounVerb(program) {
   throw `result not found`;
 }
 
-module.exports = {part1: runProgram,
-                  part2: findNounVerb,
-                  restoreGravityAssist };
+module.exports = {
+  part1: runProgram,
+  part2: findNounVerb,
+  restoreGravityAssist
+};
