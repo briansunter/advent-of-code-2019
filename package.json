@@ -1,0 +1,15 @@
+{
+  "name": "jest-tdd-starter",
+  "version": "1.0.0",
+  "description": "Simple TDD boilerplate for node.js and jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "test:watch": "jest --watchAll --coverage"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
